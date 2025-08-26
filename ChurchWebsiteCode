@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>New Beginnings Church</title>
+  <meta name="description" content="Welcome to New Beginnings Church — join us for worship, fellowship, and community outreach." />
+  <meta name="theme-color" content="#1e40af" />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    :root {
+      --primary: #1e40af;
+      --secondary: #f3f4f6;
+      --text: #1f2937;
+      --light: #ffffff;
+      --accent: #3b82f6;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--secondary);
+    }
+    header, footer {
+      background: var(--primary);
+      color: var(--light);
+      padding: 1rem 0;
+    }
+    nav a {
+      color: var(--light);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    .container {
+      width: min(1100px, 90%);
+      margin: 0 auto;
+    }
+    .hero {
+      text-align: center;
+      padding: 5rem 0;
+      background: linear-gradient(rgba(30,64,175,0.7), rgba(30,64,175,0.7)), url('hero-image.jpg') center/cover;
+      color: var(--light);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .section {
+      padding: 4rem 0;
+    }
+    .card {
+      background: var(--light);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .grid {
+      display: grid;
+      gap: 2rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background: var(--accent);
+      color: var(--light);
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .btn:hover {
+      background: #2563eb;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+    @media(min-width:768px){
+      .grid-3 { grid-template-columns: repeat(3,1fr); }
+      .grid-2 { grid-template-columns: repeat(2,1fr); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center">
+      <h2>New Beginnings Church</h2>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#ministries">Ministries</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome to New Beginnings Church</h1>
+      <p>Join us for worship and fellowship as we grow in faith and serve our community.</p>
+      <a href="#ministries" class="btn">Discover Ministries</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container grid grid-2">
+      <div>
+        <h2>About Us</h2>
+        <p>New Beginnings Church is a welcoming place to experience God's love and connect with others. Our mission is to inspire faith, hope, and transformation through worship, teaching, and service.</p>
+        <p>We are dedicated to building a strong community rooted in Christ's love and open to all.</p>
+      </div>
+      <div class="card">
+        <h3>Service Times</h3>
+        <p><strong>Sunday Worship:</strong> 10:00 AM</p>
+        <p><strong>Wednesday Bible Study:</strong> 7:00 PM</p>
+        <p><strong>Youth Group:</strong> Fridays at 6:30 PM</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ministries" class="section" style="background:var(--secondary)">
+    <div class="container">
+      <h2>Our Ministries</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Children's Ministry</h3>
+          <p>Engaging programs for kids to learn about God's love in a fun, safe environment.</p>
+        </div>
+        <div class="card">
+          <h3>Community Outreach</h3>
+          <p>Serving the local community through food drives, support programs, and volunteering.</p>
+        </div>
+        <div class="card">
+          <h3>Music Ministry</h3>
+          <p>Leading the congregation in worship with uplifting music and praise.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="events" class="section">
+    <div class="container">
+      <h2>Upcoming Events</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Fall Festival</h3>
+          <p>Join us for fun, food, and fellowship on October 14th at 4 PM.</p>
+        </div>
+        <div class="card">
+          <h3>Christmas Choir Concert</h3>
+          <p>Celebrate the season with our annual Christmas concert on December 20th at 7 PM.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section" style="background:var(--secondary)">
+    <div class="container grid grid-2">
+      <div>
+        <h2>Contact Us</h2>
+        <p>Email: info@newbeginnings.org</p>
+        <p>Phone: (555) 123-4567</p>
+        <p>Address: 123 Church Street, Hometown, USA</p>
+      </div>
+      <div class="card">
+        <h3>Send Us a Message</h3>
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea rows="4" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="text-align:center">
+      <p>© <span id="year"></span> New Beginnings Church. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
